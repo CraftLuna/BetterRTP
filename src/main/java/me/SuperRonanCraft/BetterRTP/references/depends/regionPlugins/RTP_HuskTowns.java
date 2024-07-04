@@ -8,7 +8,7 @@ public class RTP_HuskTowns implements RegionPluginCheck {
 
     private final BukkitHuskTownsAPI huskTownsAPI;
 
-    public RTP_HuskTowns(JavaPlugin plugin) {
+    public RTP_HuskTowns() {
         this.huskTownsAPI = BukkitHuskTownsAPI.getInstance();
     }
 

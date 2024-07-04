@@ -20,7 +20,7 @@ public enum REGIONPLUGINS {
     WORLDGUARD("WorldGuard", new RTP_WorldGuard()),
     MINEPLOTS("MinePlots", new RTP_MinePlots()),
     FACTIONSBRIDGE("FactionsBridge", new RTP_FactionsBridge()),
-    CRASH_CLAIM("CrashClaim", new RTP_CrashClaim());
+    ;
 
     @Getter private final SoftDepends.RegionPlugin plugin = new SoftDepends.RegionPlugin();
     @Getter private final String setting_name, pluginyml_name;

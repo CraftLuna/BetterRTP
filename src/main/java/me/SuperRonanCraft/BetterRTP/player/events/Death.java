@@ -11,11 +11,7 @@ public class Death {
 
     static void respawnEvent(PlayerRespawnEvent e) {
         Player p = e.getPlayer();
-        WorldPlayer worldPlayer = HelperRTP.getPlayerWorld(new RTPSetupInformation(
-                p.getWorld(),
-                p, p, false
-        ));
-        if (worldPlayer.getRTPOnDeath()) {
+        if (p.getBedSpawnLocation() == null) {
             HelperRTP.tp(p, p, p.getWorld(), null, RTP_TYPE.FORCED, true, true);
         }
     }
